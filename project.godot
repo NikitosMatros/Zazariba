@@ -1,0 +1,40 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Pure Malice"
+run/main_scene="uid://b1qgk3awdqr8l"
+config/features=PackedStringArray("4.7", "Forward Plus")
+config/icon="uid://fenuoo3kw388"
+
+[autoload]
+
+G="*uid://daqnm1c18bjha"
+
+[display]
+
+window/size/viewport_width=1024
+window/size/viewport_height=1024
+window/size/resizable=false
+window/stretch/mode="canvas_items"
+
+[dotnet]
+
+project/assembly_name="New Game Project"
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
+environment/defaults/default_clear_color=Color(0.29219002, 0.29219005, 0.29219, 1)

@@ -1,0 +1,258 @@
+[gd_scene format=3 uid="uid://155xx7s6y6ta"]
+
+[ext_resource type="Script" uid="uid://blyusjbdydqg5" path="res://scripts/main.gd" id="1_elqb8"]
+[ext_resource type="Texture2D" uid="uid://bjteqwyqh7std" path="res://images/Border.png" id="2_rvslj"]
+[ext_resource type="Texture2D" uid="uid://gmha7it11s78" path="res://images/Circle.png" id="4_rarhs"]
+[ext_resource type="AudioStream" uid="uid://duc56pi4deqg8" path="res://sounds/win.ogg" id="4_vcsgt"]
+[ext_resource type="AudioStream" uid="uid://bkjqs0uyveahy" path="res://sounds/Dark.ogg" id="5_vcsgt"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hlq8h"]
+bg_color = Color(0.95686275, 0.83137256, 0.6745098, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0bbpv"]
+bg_color = Color(0.84705883, 0.69411767, 0.5137255, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rvslj"]
+bg_color = Color(1, 0.9019608, 0.76862746, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7kd44"]
+bg_color = Color(0.95686275, 0.83137256, 0.6745098, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rarhs"]
+bg_color = Color(0.84705883, 0.69411767, 0.5137255, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vcsgt"]
+bg_color = Color(1, 0.9019608, 0.76862746, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c01mt"]
+bg_color = Color(0.95686275, 0.83137256, 0.6745098, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nxtc6"]
+bg_color = Color(0.84705883, 0.69411767, 0.5137255, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jlsqs"]
+bg_color = Color(1, 0.9019608, 0.76862746, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q8u5g"]
+bg_color = Color(0.95686275, 0.83137256, 0.6745098, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lhr70"]
+bg_color = Color(0.84705883, 0.69411767, 0.5137255, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wp0k4"]
+bg_color = Color(1, 0.9019608, 0.76862746, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bjd11"]
+bg_color = Color(0.95686275, 0.83137256, 0.6745098, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qmy6f"]
+bg_color = Color(0.84705883, 0.69411767, 0.5137255, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mwfav"]
+bg_color = Color(1, 0.9019608, 0.76862746, 1)
+
+[node name="Main" type="Node2D" unique_id=293375453]
+script = ExtResource("1_elqb8")
+
+[node name="Cells" type="Node2D" parent="." unique_id=667649216]
+
+[node name="Pieces" type="Node2D" parent="." unique_id=272245925]
+
+[node name="Button" type="Button" parent="." unique_id=2104003631]
+visible = false
+offset_left = 436.0
+offset_top = 4.0
+offset_right = 628.0
+offset_bottom = 54.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_hlq8h")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_0bbpv")
+theme_override_styles/hover = SubResource("StyleBoxFlat_rvslj")
+text = "Difficulty
+"
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Button" unique_id=818602933]
+modulate = Color(0.9607843, 0.77254903, 0.50980395, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = -2.0
+offset_top = -2.0
+offset_right = 194.0
+offset_bottom = 53.0
+texture = ExtResource("2_rvslj")
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="easy" type="Button" parent="." unique_id=369632267]
+visible = false
+z_index = 101
+offset_left = 154.0
+offset_top = 123.0
+offset_right = 345.0
+offset_bottom = 172.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_7kd44")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_rarhs")
+theme_override_styles/hover = SubResource("StyleBoxFlat_vcsgt")
+text = "Easy"
+
+[node name="NinePatchRect" type="NinePatchRect" parent="easy" unique_id=1369775767]
+modulate = Color(0.9607843, 0.77254903, 0.50980395, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = -2.0
+offset_top = -2.0
+offset_right = 194.0
+offset_bottom = 53.0
+texture = ExtResource("2_rvslj")
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="medium" type="Button" parent="." unique_id=1057204186]
+visible = false
+z_index = 101
+offset_left = 365.0
+offset_top = 123.0
+offset_right = 557.0
+offset_bottom = 173.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_c01mt")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_nxtc6")
+theme_override_styles/hover = SubResource("StyleBoxFlat_jlsqs")
+text = "Medium
+"
+
+[node name="NinePatchRect" type="NinePatchRect" parent="medium" unique_id=68256877]
+modulate = Color(0.9607843, 0.77254903, 0.50980395, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = -2.0
+offset_top = -2.0
+offset_right = 194.0
+offset_bottom = 53.0
+texture = ExtResource("2_rvslj")
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="hard" type="Button" parent="." unique_id=1028410907]
+visible = false
+z_index = 101
+offset_left = 584.0
+offset_top = 123.0
+offset_right = 778.0
+offset_bottom = 174.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_q8u5g")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_lhr70")
+theme_override_styles/hover = SubResource("StyleBoxFlat_wp0k4")
+text = "Hard"
+
+[node name="NinePatchRect" type="NinePatchRect" parent="hard" unique_id=1501723908]
+modulate = Color(0.9607843, 0.77254903, 0.50980395, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = -2.0
+offset_top = -2.0
+offset_right = 194.0
+offset_bottom = 53.0
+texture = ExtResource("2_rvslj")
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="lunatic" type="Button" parent="." unique_id=255173275]
+visible = false
+z_index = 101
+offset_left = 802.0
+offset_top = 123.0
+offset_right = 994.0
+offset_bottom = 173.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_bjd11")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_qmy6f")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mwfav")
+text = "Lunatic"
+
+[node name="NinePatchRect" type="NinePatchRect" parent="lunatic" unique_id=1017417596]
+modulate = Color(0.9607843, 0.77254903, 0.50980395, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = -2.0
+offset_top = -2.0
+offset_right = 194.0
+offset_bottom = 53.0
+texture = ExtResource("2_rvslj")
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="WIN" type="Label" parent="." unique_id=224900612]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 345.0
+offset_top = 60.0
+offset_right = 698.0
+offset_bottom = 109.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.9764706, 0.92941177, 0.8784314, 1)
+theme_override_colors/font_shadow_color = Color(0.13333334, 0.105882354, 0.078431375, 0.49411765)
+theme_override_colors/font_outline_color = Color(0.13333334, 0.105882354, 0.078431375, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 1
+theme_override_font_sizes/font_size = 35
+text = "YOU WIN"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Background" type="Control" parent="." unique_id=233528630]
+z_index = -100
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="Background" unique_id=1674038070]
+z_index = -100
+texture_filter = 2
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("4_rarhs")
+
+[node name="Win" type="AudioStreamPlayer" parent="." unique_id=260693496]
+stream = ExtResource("4_vcsgt")
+volume_db = -10.0
+
+[node name="Start" type="AudioStreamPlayer" parent="." unique_id=870282463]
+stream = ExtResource("5_vcsgt")
+volume_db = -10.0
+pitch_scale = 0.8
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="easy" to="." method="_on_easy_pressed"]
+[connection signal="pressed" from="medium" to="." method="_on_medium_pressed"]
+[connection signal="pressed" from="hard" to="." method="_on_hard_pressed"]
+[connection signal="pressed" from="lunatic" to="." method="_on_lunatic_pressed"]

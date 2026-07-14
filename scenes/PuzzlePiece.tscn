@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://bpem587uf7cur"]
+
+[ext_resource type="Script" uid="uid://dgg7fymjbidtu" path="res://scripts/puzzle_piece.gd" id="1_jpqrk"]
+[ext_resource type="AudioStream" uid="uid://dh7iyy3jnv2hi" path="res://sounds/SelectClick.ogg" id="2_0onat"]
+[ext_resource type="AudioStream" uid="uid://plfk4bvg3lkp" path="res://sounds/Select.ogg" id="3_lony8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7kd44"]
+
+[node name="PuzzlePiece" type="Area2D" unique_id=2001888789]
+script = ExtResource("1_jpqrk")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1868226289]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2041924848]
+shape = SubResource("RectangleShape2D_7kd44")
+
+[node name="SelectClick" type="AudioStreamPlayer" parent="." unique_id=752972381]
+stream = ExtResource("2_0onat")
+volume_db = -15.0
+
+[node name="Select" type="AudioStreamPlayer" parent="." unique_id=1170336022]
+stream = ExtResource("3_lony8")
+volume_db = -12.5
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
